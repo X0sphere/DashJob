@@ -17,7 +17,7 @@ genai.configure(api_key=api_key)  # Ensure this is the correct way to configure 
 
 # Define prompts as constants
 PROMPTS = {
-    'about_resume': "Give back the parsed data from resume in organised form",
+    'about_resume': "Give back the parsed data from resume in organised form and remove asterisk sign if it's heading then give it in capital letters and if this is table then provide it in a table form",
     'improve_skills': "You are an Technical Human Resource Manager with expertise in data science, your role is to scrutinize the resume in light of the job description provided. Share your insights on the candidate's suitability for the role from an HR perspective. Additionally, offer advice on enhancing the candidate's skills and identify areas where improvement is needed.",
     'keywords_missing': "You are an skilled ATS (Applicant Tracking System) scanner with a deep understanding of data science and ATS functionality, your task is to evaluate the resume against the provided job description. As a Human Resource manager, assess the compatibility of the resume with the role. Give me what are the keywords that are missing Also, provide recommendations for enhancing the candidate's skills and identify which areas require further development.",
     'percentage_match': "You are an skilled ATS (Applicant Tracking System) scanner with a deep understanding of data science and ATS functionality, your task is to evaluate the resume against the provided job description. give me the percentage of match if the resume matches the job description. First the output should come as percentage and then keywords missing and last final thoughts."
